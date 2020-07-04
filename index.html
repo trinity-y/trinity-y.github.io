@@ -4,7 +4,17 @@
 		<title>Under Construction</title>
 	</head>
 	<body>
+		<script type="text/javascript">
+			function testFunction() {
+				testInputText = document.getElementById("testInput").value;
+			}
+			function show(string id) {
+				var element = document.getElementById(id);
+			}
+		</script>
 		<H1>im trying my best here</H1>
-		<paragraph>thanks for looking at this site whoever you are</paragraph>
+		<p style="font-size:140%;">thanks for looking at this site whoever you are</p>
+		<p id="surpriseText"> wow!!!!! </p>
+		<input id="testInput" type="this does nothing"/> <button onclick="show(surpriseText)">this does though</button>
 	</body>
 </html>
