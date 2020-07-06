@@ -5,13 +5,18 @@
 	</head>
 	<body>
 		<script type="text/javascript">
-			function show(id) {
+			function getInput(id) {
+				return document.getElementById(id).value;
+			}
+			function editText(id, message) {
 				var element = document.getElementById(id);
-				element.innerHTML = "wow!!!!!";
+				element.innerHTML = message;
 			}
 		</script>
 		<H1>im trying my best here</H1>
-		<p style="font-size:140%;">thanks for looking at this site whoever you are</p> <button onclick="show(surpriseText)">i think you can click this</button>
-		<p id="surpriseText">  </p>
+		<p style="font-size:140%;">thanks for looking at this site whoever you are</p> 
+		<p id="instructions"> if you can guess the code right i'll tell you good job </p>
+		<input id="userCodeGuess" type="text"/><button onclick="editText(getInput('userCodeGuess'), 'good job.')">check if you got it right</button>
+		<p id="idk">  </p>
 	</body>
 </html>
