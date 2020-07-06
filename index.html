@@ -5,16 +5,13 @@
 	</head>
 	<body>
 		<script type="text/javascript">
-			function testFunction() {
-				testInputText = document.getElementById("testInput").value;
-			}
 			function show(string id) {
 				var element = document.getElementById(id);
+				element.innerHTML = "wow!!!!!";
 			}
 		</script>
 		<H1>im trying my best here</H1>
-		<p style="font-size:140%;">thanks for looking at this site whoever you are</p>
-		<p id="surpriseText"> wow!!!!! </p>
-		<input id="testInput" type="this does nothing"/> <button onclick="show(surpriseText)">this does though</button>
+		<p style="font-size:140%;">thanks for looking at this site whoever you are</p> <button onclick="show(surpriseText)">i think you can click this</button>
+		<p id="surpriseText">  </p>
 	</body>
 </html>
