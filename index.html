@@ -3,19 +3,11 @@
 	<!-- title defines website title, link applies css -->
 	<head>
 		<title>Under Construction</title>
-		<link rel="stylesheet" type="text/css" href="basic.css"
+		<link rel="stylesheet" type="text/css" href="basic.css">
 	</head>
 	<!-- body -->
 	<body>
-		<!-- top part -->
-		<header>
-			<H1>Trinity Yip</H1>
-		</header>
-		<!-- links -->
-		<nav>
-			<button onclick="window.location.href='index.html';" class="navButton">home</button>
-			<button onclick="window.location.href='resume.html';" class="navButton">resume</button>
-		</nav>
+		<!-- JAVASCRIPT -->
 		<script type="text/javascript">
 			function getInput(id) {
 				return document.getElementById(id).value;
@@ -25,10 +17,20 @@
 				element.innerHTML = message;
 			}
 		</script>
-		<H1 style="padding:5px;">im trying my best here</H1>
-		<H3>thanks for looking at this site whoever you are</H3> 
-		<p id="instructions"> if you can guess the code right i'll tell you good job </p>
-		<input id="userCodeGuess" type="text"/><button onclick="editText(getInput('userCodeGuess'), 'good job.')">check if you got it right</button>
-		<p id="password">  </p>
+		<!-- top part -->
+		<header>
+			<div class="headDiv">
+				<H1>Trinity Yip</H1>
+			</div>
+		</header>
+		<!-- links -->
+		<nav>
+			<div class="navLinkContainer">
+				<a href="index.html" class="navLink" data-content="HOME">HOME</a>
+				<a href="resume.html" class="navLink" data-content="RESUME">RESUME</a>
+			</div>
+		</nav>
+		<!-- main site -->
+
 	</body>
 </html>

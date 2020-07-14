@@ -1,42 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
-body {
-	background-color: #1a1716;
-	color:white;
+ FONT IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+/*FONT DECLARATIONS*/
+@font-face {
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-weight: 600;
+	font-weight: 700;
 }
 
-header {
-	background-color: #dba9a1;
+/* DEFAULT SETTINGS */
+
+*{
 	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	color: white;
+	margin:1%;
 }
 
+/* CLASSES */
 
-h1, h2, h3, h5, p {
-	left-padding: 10px;
-}
-
-.navButton {
+	/* HEAD */
+.headDiv {
 	background-color: #dba9a1;
-	border: none;
+	text-align:center;
+	margin:0px;
+}
+
+	/* NAVIGATION */
+.navLink {
 	color: white;
 	width:80px;
-	font-size: 16px;
+	font-weight: 600;
+	font-size: 18px;
 	padding: 5px;
-	margin: 5px 10px;
+	margin: 0px 10px;
+	overflow:hidden;
+	position:relative;
+	display:inline-block;
+	text-decoration:none;
+	transition: clip-path 0.3s linear;
 }
 
-ul {
-	type: circle;
+.navLink:hover::before {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
+.navLink::before {
+	content: attr(data-content);
+	color: #dba9a1;
+	position: absolute;
+    text-decoration: underline;
+    clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+    transition: clip-path 0.3s linear;
+}
+
+.navLinkContainer {
+	text-align: center;
+}
+
+/* SPECIFIC ELEMENTS */
+
+h2, h3, h5, p {
+}
+
 h1 {
 	font-size: 250%;
-	/*float:left;*/
 	padding:20px;
 	font-style:oblique;
+	font-weight: 700;
 }
 h2 {
 	font-size: 170%;
+	font-weight:600;
 }
 
 h3 {
@@ -47,7 +82,12 @@ h5 {
 	font-size: 110%;
 	padding:0px;
 }
-/*a {
-	clear:left;
-	display:inline;
-}*/
+
+ul {
+	type: circle;
+}
+
+body {
+	background-color: #1a1716;
+	background-image: url("/assets/clouds.jpg");
+}
