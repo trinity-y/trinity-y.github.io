@@ -16,20 +16,22 @@
 				var element = document.getElementById(id);
 				element.innerHTML = message;
 			}
-			function joinTwo(string1, string2) {
-				return string1 + string2;
-			}
 		</script>
 		<!-- top part -->
 		<header>
 			<div class="headDiv">
-				<H1 class="websiteTitle">Hello!</H1>
+				<H1 class="websiteTitle">Trinity Yip</H1>
 			</div>
 		</header>
+		<!-- links -->
+		<nav>
+			<div class="navLinkContainer">
+				<a href="home.html" class="navLink" data-content="HOME">HOME</a>
+				<a href="resume.html" class="navLink" data-content="RESUME">RESUME</a>
+				<a href="projects.html" class="navLink" data-content="PROJECTS">PROJECTS</a>
+			</div>
+		</nav>
 		<!-- main site -->
-		<H2>Thanks for Visiting! </H2>
-		<p>Please enter the password to get in!</p>
-		<p>I know it's kind of easy to break in, but please don't. Thanks!!</p>
-		<input id = "inputField"/><button onclick="window.location.href=joinTwo(getInput('inputField'), '.html');">submit</button>
+
 	</body>
 </html>

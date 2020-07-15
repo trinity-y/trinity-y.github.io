@@ -26,13 +26,18 @@
 	margin:0px;
 }
 
+.websiteTitle {
+	padding:30px;
+	font-size: 300%;
+}
+
 	/* NAVIGATION */
 .navLink {
 	color: white;
-	width:80px;
+	width:120px;
 	font-weight: 600;
-	font-size: 18px;
-	padding: 5px;
+	font-size: 25px;
+	padding: 0px;
 	margin: 0px 10px;
 	overflow:hidden;
 	position:relative;
@@ -65,10 +70,10 @@ h2, h3, h5, p {
 
 h1 {
 	font-size: 250%;
-	padding:20px;
 	font-style:oblique;
 	font-weight: 700;
 }
+
 h2 {
 	font-size: 170%;
 	font-weight:600;
@@ -90,4 +95,8 @@ ul {
 body {
 	background-color: #1a1716;
 	background-image: url("/assets/clouds.jpg");
+}
+
+input {
+	color: #1a1716;
 }
