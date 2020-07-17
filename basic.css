@@ -63,6 +63,14 @@
 	text-align: center;
 }
 
+	/* PROJECTS */
+.projectDiv {
+	padding-bottom:5px;
+	padding-top:5px;
+	color: #dba9a1;
+	text-decoration: underline;
+}
+
 /* SPECIFIC ELEMENTS */
 
 h2, h3, h5, p {
@@ -75,17 +83,17 @@ h1 {
 }
 
 h2 {
-	font-size: 170%;
+	font-size: 200%;
 	font-weight:600;
 }
 
 h3 {
-	font-size: 120%;
+	font-size: 170%;
+	font-weight: 600;
 }
 
 h5 {
-	font-size: 110%;
-	padding:0px;
+	font-size: 130%;
 }
 
 ul {
@@ -97,6 +105,6 @@ body {
 	background-image: url("/assets/clouds.jpg");
 }
 
-input {
+input, button {
 	color: #1a1716;
 }
