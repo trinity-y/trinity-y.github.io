@@ -16,6 +16,30 @@
 				var element = document.getElementById(id);
 				element.innerHTML = message;
 			}
+			// slider!!
+			var imgIndex = 0;
+			var imgMax = 1;
+			var imgBank = ['/assets/restCounterAppRecordingPiece.png', '/assets/restCounterAppBrowsingPieces.png'];
+			var textBank = ['the user can record their own music onto the application by entering the bpm, beats per bar, and the number of bars of rest or music.', 'here, you can see the user opening a saved piece.'];
+			function updatePlayer(index) {
+				document.getElementById('playerImage').src = imgBank[index];
+				document.getElementById('playerText').innerHTML = textBank[index];
+				document.getElementById('setButton' + index).color = '#81807e';
+				
+			}
+			function increaseNumBy(n) {
+				if (imgIndex + n <= imgMax && imgIndex + n >= 0) {
+					imgIndex += n;
+				} else {
+					imgIndex -= n;
+				}
+				updatePlayer(imgIndex);
+			}
+			function setNum(n) {
+				imgIndex == n;
+				updatePlayer(imgIndex);
+
+			}
 		</script>
 		<!-- top part -->
 		<header>
@@ -31,22 +55,24 @@
 				<a href="projects.html" class="navLink" data-content="PROJECTS">PROJECTS</a>
 			</div>
 		</nav>
-		<!-- main site -->
-			<!-- rest counter -->
-		<div class="projectDiv">
-			<H3>Rest Counter (C#, Windows Forms Application)</H3>
-		</div>
-		<H5>My rest counter app counts music for the user, allowing them to take break without counting long rests!</H5>
-		<div>
-		<img src="/assets/restCounterAppRecordingSheet.png" alt="Recording the sheet music into the program" style="float:left;" >
-		<p style="position:relative; top:10px;">the user can record their own music onto the application by entering the bpm, beats per bar, and the number of bars of rest or music.</p>
-		<p> the user can then save the piece or click play to begin! </p>
-		<p>when the user clicks 'save', three arrays are saved onto an xml file by loop to be accessed later.</p>
-		<p>the player can be paused by pressing space. </p>
-		</div>
-		<div>
-		<img src="/assets/restCounterAppBrowsingPieces.png" alt="Loading the piece" style="position:relative; top:30px; float:right;">
-		<p>here, you can see the user opening a saved piece. </p>
-		</div>
+	<!-- main site -->
+		<!-- rest counter -->
+			<!-- slider -->
+			<table class="slider">
+				<tr colspan="3">
+					<image src="/assets/restCounterAppRecordingPiece.png" id="playerImage" style="width:270px;/>
+				</tr>
+				<tr colspan="3">
+					<p id="playerText" style="width:260px; overflow:wrap;">the user can record their own music onto the application by entering the bpm, beats per bar, and the number of bars of rest or music.</p>
+				</tr>
+				<tr>
+					<td><button onClick="increaseNumBy(-1);">&lt</button></td>
+					<td><div class="sliderSetButtons" style="width:190px;">
+						<button onClick="setNum(0)" id="setButton0">o</button>
+						<button onClick="setNum(1)" id="setButton1">o</button>
+					</div></td>
+					<td><button onClick="increaseNumBy(1);">&gt</button></td>
+				</tr>
+			</table>
 	</body>
 </html>

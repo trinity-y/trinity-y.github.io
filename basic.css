@@ -67,9 +67,17 @@
 .projectDiv {
 	padding-bottom:5px;
 	padding-top:5px;
+	padding-left:0px;
 	color: #dba9a1;
 	text-decoration: underline;
 }
+.sliderSetButtons {
+	text-align: center;
+	margin: auto;
+	display:block;
+}
+
+	
 
 /* SPECIFIC ELEMENTS */
 
