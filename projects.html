@@ -19,7 +19,7 @@
 			// slider!!
 			var imgIndex = 0;
 			var imgMax = 1;
-			var imgBank = ['/assets/restCounterAppRecordingPiece.png', '/assets/restCounterAppBrowsingPieces.png'];
+			var imgBank = ['/assets/restCounterAppRecordingSheet.png', '/assets/restCounterAppBrowsingPieces.png'];
 			var textBank = ['the user can record their own music onto the application by entering the bpm, beats per bar, and the number of bars of rest or music.', 'here, you can see the user opening a saved piece.'];
 			function updatePlayer(index) {
 				document.getElementById('playerImage').src = imgBank[index];
@@ -60,14 +60,14 @@
 			<!-- slider -->
 			<table class="slider">
 				<tr colspan="3">
-					<image src="/assets/restCounterAppRecordingPiece.png" id="playerImage" style="width:270px;/>
+					<image src="/assets/restCounterAppRecordingSheet.png" id="playerImage" style="width:350px;/>
 				</tr>
 				<tr colspan="3">
-					<p id="playerText" style="width:260px; overflow:wrap;">the user can record their own music onto the application by entering the bpm, beats per bar, and the number of bars of rest or music.</p>
+					<p id="playerText" style="width:350px; overflow:wrap;">the user can record their own music onto the application by entering the bpm, beats per bar, and the number of bars of rest or music.</p>
 				</tr>
 				<tr>
 					<td><button onClick="increaseNumBy(-1);">&lt</button></td>
-					<td><div class="sliderSetButtons" style="width:190px;">
+					<td><div class="sliderSetButtons" style="width:270px;">
 						<button onClick="setNum(0)" id="setButton0">o</button>
 						<button onClick="setNum(1)" id="setButton1">o</button>
 					</div></td>
