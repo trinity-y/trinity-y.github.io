@@ -22,9 +22,11 @@
 			var imgBank = ['/assets/restCounterAppRecordingSheet.png', '/assets/restCounterAppBrowsingPieces.png'];
 			var textBank = ['the user can record their own music onto the application by entering the bpm, beats per bar, and the number of bars of rest or music.', 'here, you can see the user opening a saved piece.'];
 			function updatePlayer(index) {
+				document.getElementById('setButton0').style.color = 'white';
+				document.getElementById('setButton1').style.color = 'white';
 				document.getElementById('playerImage').src = imgBank[index];
 				document.getElementById('playerText').innerHTML = textBank[index];
-				document.getElementById('setButton' + index).color = '#81807e';
+				document.getElementById('setButton' + index).style.color = "#81807e";
 				
 			}
 			function increaseNumBy(n) {
@@ -36,7 +38,7 @@
 				updatePlayer(imgIndex);
 			}
 			function setNum(n) {
-				imgIndex == n;
+				imgIndex = n;
 				updatePlayer(imgIndex);
 
 			}
@@ -66,12 +68,12 @@
 					<p id="playerText" style="width:350px; overflow:wrap;">the user can record their own music onto the application by entering the bpm, beats per bar, and the number of bars of rest or music.</p>
 				</tr>
 				<tr>
-					<td><button onClick="increaseNumBy(-1);">&lt</button></td>
-					<td><div class="sliderSetButtons" style="width:270px;">
-						<button onClick="setNum(0)" id="setButton0">o</button>
-						<button onClick="setNum(1)" id="setButton1">o</button>
+					<td><button onClick="increaseNumBy(-1);" class="sliderButton" >&lt</button></td>
+					<td><div class="sliderButtonContainer">
+						<button onClick="setNum(0)" id="setButton0" class="sliderButton" >●</button>
+						<button onClick="setNum(1)" id="setButton1" class="sliderButton">●</button>
 					</div></td>
-					<td><button onClick="increaseNumBy(1);">&gt</button></td>
+					<td><button onClick="increaseNumBy(1);" class="sliderButton" >&gt</button></td>
 				</tr>
 			</table>
 	</body>

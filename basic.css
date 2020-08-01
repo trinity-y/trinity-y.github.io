@@ -71,13 +71,24 @@
 	color: #dba9a1;
 	text-decoration: underline;
 }
-.sliderSetButtons {
+.sliderButtonContainer {
 	text-align: center;
-	margin: auto;
+	margin:auto;
 	display:block;
+	width:270px;
 }
-
+.sliderButton {
+	font-weight: 700px;
+	font-size:32px;
+	background-color:transparent;
+	border:none;
+	color: white;
+	outline: none;
+}
 	
+.sliderButton:hover {
+	color: #dba9a1;
+}
 
 /* SPECIFIC ELEMENTS */
 
