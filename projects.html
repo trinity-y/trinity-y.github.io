@@ -59,22 +59,44 @@
 		</nav>
 	<!-- main site -->
 		<!-- rest counter -->
-			<!-- slider -->
-			<table class="slider">
-				<tr colspan="3">
-					<image src="/assets/restCounterAppRecordingSheet.png" id="playerImage" style="width:350px;/>
-				</tr>
-				<tr colspan="3">
-					<p id="playerText" style="width:350px; overflow:wrap;">the user can record their own music onto the application by entering the bpm, beats per bar, and the number of bars of rest or music.</p>
-				</tr>
+			
+			<div class="projectDiv">
+				<p>Rest Counter App (Windows Forms, C#)</p>
+			</div>
+			<table>
 				<tr>
-					<td><button onClick="increaseNumBy(-1);" class="sliderButton" >&lt</button></td>
-					<td><div class="sliderButtonContainer">
-						<button onClick="setNum(0)" id="setButton0" class="sliderButton" >●</button>
-						<button onClick="setNum(1)" id="setButton1" class="sliderButton">●</button>
-					</div></td>
-					<td><button onClick="increaseNumBy(1);" class="sliderButton" >&gt</button></td>
+					<td>
+					<!-- slider -->
+					<table class="slider">
+						<tr colspan="3">
+							<image src="/assets/restCounterAppRecordingSheet.png" id="playerImage" style="width:350px;/>
+						</tr>
+						<tr colspan="3">
+							<p id="playerText" style="width:350px; overflow:wrap;">the user can record their own music onto the application by entering the bpm, beats per bar, and the number of bars of rest or music.</p>
+						</tr>
+						<tr>
+							<td><button onClick="increaseNumBy(-1);" class="sliderButton" >&lt</button></td>
+							<td><div class="sliderButtonContainer">
+								<button onClick="setNum(0)" id="setButton0" class="sliderButton" >●</button>
+								<button onClick="setNum(1)" id="setButton1" class="sliderButton">●</button>
+							</div></td>
+							<td><button onClick="increaseNumBy(1);" class="sliderButton" >&gt</button></td>
+						</tr>
+					</table>
+					</td>
+					<td style="padding:40px;">
+						<h3>Overview</h3>
+						<ul>this application counts long rests for instrument players!</ul>
+						<ul>calculations are based on the tempo, time signature, and the number of bars of rest/music.</ul>
+						<ul>the user can 'play' the music by entering the player or save it on to the computer for later!</ul>
+					</td>
+					<td style="padding:40px;">
+						<h3>Technical Aspects</h3>
+						<ul>I used loops to save three arrays onto an xml file that is saved onto the user's computer</ul>
+						<ul>it is also loaded via loops!</ul>
+						<ul>I used C#, and Windows forms, and LINQ to build this application</ul>
+					</td>
 				</tr>
-			</table>
+
 	</body>
 </html>
