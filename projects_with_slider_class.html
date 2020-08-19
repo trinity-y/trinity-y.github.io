@@ -17,30 +17,60 @@
 				element.innerHTML = message;
 			}
 			// slider!!
-			var imgIndex = 0;
-			var imgMax = 1;
-			var imgBank = ['/assets/restCounterAppRecordingSheet.png', '/assets/restCounterAppBrowsingPieces.png'];
-			var textBank = ['the user can record their own music onto the application by entering the bpm, beats per bar, and the number of bars of rest or music.', 'here, you can see the user opening a saved piece.'];
-			function updatePlayer(index) {
-				document.getElementById('setButton0').style.color = 'white';
-				document.getElementById('setButton1').style.color = 'white';
-				document.getElementById('playerImage').src = imgBank[index];
-				document.getElementById('playerText').innerHTML = textBank[index];
-				document.getElementById('setButton' + index).style.color = "#81807e";
-				
-			}
-			function increaseNumBy(n) {
-				if (imgIndex + n <= imgMax && imgIndex + n >= 0) {
-					imgIndex += n;
-				} else {
-					imgIndex -= n;
-				}
-				updatePlayer(imgIndex);
-			}
-			function setNum(n) {
-				imgIndex = n;
-				updatePlayer(imgIndex);
+			class Slider {
+				constructor(name, imgBank, textBank, defaultIndex, numOfImages, location){
+					//declare variables
+					this.sliderID = name;
+					this.imgBank = imgBank;
+					this.textBank = textBank;
+					this.imgIndex = defaultIndex;
+					this.numOfImages = numOfImages;
+					//create slider
+					//table 'shells'
+					var sliderShell = createElement(table);
+					document.location.appendChild(sliderShell);
+					var imageShell = createElement(tr);
+					document.sliderShell.appendChild(imageShell);
+					var textShell = crateElement(tr);
+					document.sliderShell.appendChild(textShell);
+					var buttonShell = createElement(tr);
+					document.sliderShell.appendChild(buttonShell);
+					//button 'shells'
+					var leftButtonShell = createElement(td);
+					document.buttonShell.appendChild(leftButtonshell);
+					var setButtonShell = createElement(td);
+					document.buttonShell.appendChild(setButtonshell);
+					var rightButtonShell = createElement(td);
+					document.buttonShell.appendChild(rightButtonshell);
+					//buttons
+					//left/right buttons
+					for (var i=0; i>numOfImages; i++) {
+						var tempButtonName = "setButton" + i;
+						var 
+					}
 
+
+				}
+
+				updatePlayer(index) {
+					document.getElementById('setButton0').style.color = 'white';
+					document.getElementById('setButton1').style.color = 'white';
+					document.getElementById('playerImage').src = imgBank[index];
+					document.getElementById('playerText').innerHTML = textBank[index];
+					document.getElementById('setButton' + index).style.color = "#81807e";
+				}
+				increaseNumBy(n) {
+					if (imgIndex + n <= imgMax && imgIndex + n >= 0) {
+						imgIndex += n;
+					} else {
+						imgIndex -= n;
+					}
+					updatePlayer(imgIndex);
+				}
+					setNum(n) {
+					imgIndex = n;
+					updatePlayer(imgIndex);
+				}
 			}
 		</script>
 		<!-- top part -->
