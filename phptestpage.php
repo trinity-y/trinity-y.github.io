@@ -34,8 +34,8 @@
 		<!-- main site -->
 		<H2>This is a page for me to test PHP!</H2>
 		<!-- PHP! -->
-		<?php>
-		
-		<?>
+		<?php
+			echo "<H3>  this was printed in php </H3>";
+		?>
 	</body>
 </html>
