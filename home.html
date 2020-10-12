@@ -1,37 +1,99 @@
-<!DOCTYPE html>
-<html>
-	<!-- title defines website title, link applies css -->
-	<head>
-		<title>Trinity's Website - Home</title>
-		<link rel="stylesheet" type="text/css" href="basic.css">
-	</head>
-	<!-- body -->
-	<body>
-		<!-- JAVASCRIPT -->
-		<script type="text/javascript">
-			function getInput(id) {
-				return document.getElementById(id).value;
-			}
-			function editText(id, message) {
-				var element = document.getElementById(id);
-				element.innerHTML = message;
-			}
-		</script>
-		<!-- top part -->
-		<header>
-			<div class="headDiv">
-				<H1 class="websiteTitle">Trinity Yip</H1>
-			</div>
-		</header>
-		<!-- links -->
-		<nav>
-			<div class="navLinkContainer">
-				<a href="home.html" class="navLink" data-content="HOME">HOME</a>
-				<a href="resume.html" class="navLink" data-content="RESUME">RESUME</a>
-				<a href="projects.html" class="navLink" data-content="PROJECTS">PROJECTS</a>
-			</div>
-		</nav>
-		<!-- main site -->
-		<H2>Thanks for Visiting!</H2>
-	</body>
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="scss/custom.css">
+
+    <title>Trinity's Website - Home</title>
+    <link rel="icon" href="assets/site_favicon.svg">
+  </head>
+  <!-- BODY -->
+  <body>
+    <!-- navigation -->
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light bg-light">
+      <ul class="navbar-nav">
+        <a class="navbar-brand">
+          <img src="assets/site_icon.jpg" width=40 height=40>
+          Trinity's Website
+        </a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="projects.html">Projects</a>
+        <a class="nav-link" href="resume.html">Resume</a>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Contact</a>
+              <a class="dropdown-item" href="#">I don't</a>
+              <a class="dropdown-item" href="#">Know what else to put</a>
+            </div>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- site biggest containers -->
+    <div class="container-fluid">
+      <!-- blank row-->
+      <div class="row">
+        <br/>
+      </div>
+      <!-- main site -->
+
+      <div class="row">
+
+        <div class="col-sm-6">
+          <h2>Thanks for visiting!</h2>
+          <br/>
+          <p>This site was made with HTML5 and Bootstrap.</p>
+          <p>It's still incomplete - I hope to add more of my projects in the future.</p>
+          <p>I have no ideas on what to write as filler text!!! So I'm just using those latin generators.</p>
+          <p>Lorem ipsum dolor sit amet, eius impedit consequat in est, at fastidii voluptatibus eam. Cu odio denique tincidunt vim. No vel quod paulo periculis, in pri mazim copiosae intellegebat, mutat vitae vim eu. Ei sit harum adipisci, cu vim aeterno pertinax periculis. Dicta admodum sea ad. Falli munere ceteros ius eu.</p>
+          <p>Quis fuisset fierent has ad, vim id vocent option. Ad paulo propriae recusabo eam, enim officiis forensibus te eum, in graece dictas senserit has. Mel id everti qualisque splendide, noster nostro aeterno ad nec. Prima labitur praesent ius in, sed ea erant iracundia.</p>
+        </div>
+
+        <!-- CARDS -->
+        <div class="col-xs-2  mx-auto">
+          <br/>
+          <!-- PROJECT CARD -->
+          <div class="row">
+            <div class="card" style="width: 30rem;">
+              <div class="card-body">
+                <h5 class="card-title" style="margin-left:0px;">Projects</h5>
+                <h6 class="card-subtitle mb-2 text-muted" style="margin-left:0px;">C#, Python...</h6>
+                <p class="card-text" style="margin-left:0px;">On my projects page, I'll briefly explain each project and what I think are the important technical aspecs of each. I've also added pictures, so you don't need to download and run the project yourself.</p>
+                <a href="projects.html" class="card-link">Visit it here!</a>
+                <a href="github.com/trinity-y" class="card-link">Or see my projects on Github!</a>
+              </div>
+            </div>
+          </div>
+
+          <br/>
+
+          <!-- CARD 2 -->
+          <div class ="row">
+            <div class="card" style="width: 30rem;">
+              <div class="card-body">
+                <h5 class="card-title" style="margin-left:0px;">Resume</h5>
+                <h6 class="card-subtitle mb-2 text-muted" style="margin-left:0px;">Education, work experience, and skills...</h6>
+                <p class="card-text" style="margin-left:0px;">If you didn't recieve my resume, or don't have it on you, you can read my resume on this page.</p>
+                <a href="resume.html" class="card-link">Visit it here!</a>
+                <a href="downloads/2020 resume.pdf" class="card-link">Or, click here to view or download my resume!</a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- cards row-->
+
+      </div><!-- main row-->
+    </div> <!-- whole website container -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
 </html>
