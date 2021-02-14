@@ -1,0 +1,28 @@
+.section {
+    color:#ffffff;
+
+}
+/*page customization -- each page has a picture and a background box*/
+#page0 {
+     background-image: url(bg/landscape0.jpg);
+ }
+#page1 {
+    background-image: url(bg/landscape1.jpg);
+}
+
+#page2 {
+    background-image: url(bg/landscape2.jpg);
+}
+
+#page3{
+    background-image:url(bg/landscape3.jpg);
+}
+
+.row {
+    background-color:rgba(50, 50, 50, 0.4)
+}
+
+.row, #title {
+    padding: 1em 3em 1em 3em;
+    margin-right:0;
+}

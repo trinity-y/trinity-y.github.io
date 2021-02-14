@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html>
-	<!-- title defines website title, link applies css -->
-	<head>
-		<!-- Required meta tags -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="scss/custom.css">
+<!-- title defines website title, link applies css -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="scss/custom.css">
 
-		<title>Locked</title>
-		<link rel="icon" href="assets/site_favicon.svg">
-	</head>
-	<!-- body -->
-	<body>
-		<!-- JAVASCRIPT -->
-		<script type="text/javascript">
-			function getInput(id) {
-				return document.getElementById(id).value;
-			}
-			function editText(id, message) {
-				var element = document.getElementById(id);
-				element.innerHTML = message;
-			}
-			function joinTwo(string1, string2) {
-				return string1 + string2;
-			}
-		</script>
+    <title>Locked</title>
+    <link rel="icon" href="assets/site_favicon.svg">
+</head>
+<!-- body -->
+<body>
+<!-- JAVASCRIPT -->
+<script type="text/javascript">
+    function getInput(id) {
+        return document.getElementById(id).value;
+    }
+    function editText(id, message) {
+        var element = document.getElementById(id);
+        element.innerHTML = message;
+    }
+    function joinTwo(string1, string2) {
+        return string1 + string2;
+    }
+</script>
 
-		<!-- main site -->
-		<div style="margin: 1em;">
-			<H2 style="margin: 0;" >Thanks for Visiting! </H2>
-			<p style="margin: 0;">Please enter the password to get in!</p>
-			<input class="input-group-text" style="display:inline;" id="inputField"/><button class="btn btn-outline-secondary" onclick="window.location.href=joinTwo(getInput('inputField'), '.html');">submit</button>
-		</div>
+<!-- main site -->
+<div style="margin: 1em;">
+    <H2 style="margin: 0;" >Thanks for Visiting! </H2>
+    <p style="margin: 0;">Please enter the password to get in!</p>
+    <input class="input-group-text" style="display:inline;" id="inputField"/><button class="btn btn-outline-secondary" onclick="window.location.href=joinTwo(getInput('inputField'), '.php');">submit</button>
+</div>
 
 
 
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
 </html>
